@@ -1,0 +1,17 @@
+clear-host;
+$chars = 150;
+
+while($true){
+
+    for($i=0; $i -le $chars; $i++){
+
+        $num = Get-Random -inputobject (10..90);
+
+      
+        $char = [char]$num;
+      
+        Write-Host $char -NoNewline;
+      }
+
+      Write-Host "";
+}
